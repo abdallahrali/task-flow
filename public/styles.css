@@ -1,0 +1,146 @@
+:root {
+  --main-blue: #57b7f2;
+  --dark-blue: #4ea4da;
+  --completed-green: rgb(3 216 156);
+}
+
+body {
+  background-image: url("back.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100dvh;
+  background-attachment: fixed;
+  color: #333;
+  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  filter: drop-shadow(0px -11px 9px black);
+}
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand h3 {
+  font-size: 23px;
+  font-weight: 600;
+  position: relative;
+  top: 6px;
+}
+.logout-btn {
+  padding: 0.6rem 1.7rem;
+  background: linear-gradient(190deg, #2fabd4, #5adee9);
+  color: white;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.logout-btn:hover {
+  filter: opacity(0.7);
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: var(--main-blue) !important;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 12px;
+}
+
+.add-task-btn {
+  background-color: var(--main-blue);
+  border-radius: 5px;
+  color: white;
+}
+.add-task-btn:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.task-card {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.task-card h5 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.task-actions button {
+  margin-right: 5px;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+.auth-container .card {
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-title {
+  color: var(--dark-blue);
+  font-weight: 600 !important;
+}
+
+.button-blues {
+  background-color: var(--main-blue);
+  color: white;
+  transition: 0.3s;
+}
+.button-blues:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+.task-complete {
+  opacity: 0.6;
+}
+.task-complete .card-title,
+.task-complete .card-text {
+  text-decoration: line-through;
+}
+.completed-btn,
+.pending-btn,
+.all-tasks-btn {
+  border: 1px solid var(--completed-green);
+}
+.completed-btn:hover,
+.pending-btn:hover,
+.all-tasks-btn:hover,
+.active-filter {
+  background-color: var(--completed-green) !important;
+  color: white !important;
+}
+
+.username-scroll-container {
+  max-width: 35ch;
+  overflow-x: auto;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .username-scroll-container {
+    display: none;
+  }
+}
