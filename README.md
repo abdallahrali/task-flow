@@ -23,6 +23,3 @@ A simple, secure, and dynamic to-do list application built with PHP and MySQL. T
 
 ## 📸 Demo
 [Live Demo](https://mytaskflow.infinityfreeapp.com/)
-
-```bash
-git clone [https://github.com/your-username/your-repository-name.git](https://github.com/your-username/your-repository-name.git)
