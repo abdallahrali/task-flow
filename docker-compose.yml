@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "80:80"
+      - "8080:8080"
     volumes:
       - .:/var/www/html # Your "Save and Refresh" volume
     depends_on:
