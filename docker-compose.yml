@@ -28,7 +28,7 @@ services:
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
-      - "8080:8080"
+      - "8081:8081"
     environment:
       PMA_HOST: db
     depends_on:
