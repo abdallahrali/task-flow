@@ -9,4 +9,4 @@ END
 
 sleep 10
 
-firefox http://localhost:8080/ &
+xdg-open http://localhost:8080/ &
